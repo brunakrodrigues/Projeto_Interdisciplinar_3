@@ -1,0 +1,55 @@
+/* =========================================================
+    Defaults
+========================================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+    Login
+========================================================= */
+.login {
+    background: rgb(51, 122, 183);
+}
+
+.login-wrapper {
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, .8);
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 350px;
+    background: #fff;
+}
+
+.login-wrapper header {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.login-wrapper .input-group {
+    margin-top: 10px;
+}
+
+.login-wrapper .input-group-addon {
+    background: rgb(51, 122, 183);
+}
+
+.login-wrapper .form-control {
+    font-size: 12px;
+}
+
+.login-wrapper .btn {
+    margin-top: 20px;
+    width: 50%;
+}
+
+/* =========================================================
+    Other sections ..............
+========================================================= */
