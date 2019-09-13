@@ -1,0 +1,32 @@
+/* =================================================================
+     Header 
+==================================================================*/
+
+#sobre-nos img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#campanha img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#noticias img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+#noticias p {
+    font-size: 17px;
+}
+
+#mapa {
+    height:400px;
+    width:400px;
+  }
