@@ -23,3 +23,11 @@ footer .fab {
 footer .fab:last-child {
      margin-right: 0;
 }
+
+footer a {
+     color: #fff;
+}
+
+footer a:hover {
+     color: #fff;
+}

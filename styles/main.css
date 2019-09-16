@@ -26,9 +26,9 @@
     font-size: 17px;
 }
 
-#unidades img {
-    width: 800px;
-    height: 500px;
+#unidades iframe {
+    width: 1000px; 
+    height: 450px;
     margin-top: 15px;
   }
 
@@ -36,5 +36,47 @@
      Caroussel infos 
 ==================================================================*/
 #vacinacao img {
+    width: 100%;
+}
+
+#vacinacao ul li {
+    list-style: none;
+}
+
+#ubs img {
+    width: 100%;
+    height: 360px;
+}
+
+#ubs ul li {
+    list-style: none;
+}
+
+#sus img {
+    width: 100%;
+}
+
+#remedio img {
+    width: 100%;
+    height: 380px;
+}
+
+#remedio ul li {
+    list-style: none;
+}
+
+#remedio .remedio2 {
+    height: 300px;
+}
+
+#upa img {
+    width: 100%;
+}
+
+#upa .upa2 img {
+    height: 320px;
+}
+
+#agenda-facil img {
     width: 100%;
 }
