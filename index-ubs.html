@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vacine-se</title>
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles-ubs/header.css">
+    <link rel="stylesheet" href="styles-ubs/main.css">
+
+    <script src="lib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/74813c5d7a.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar fix fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand">
+                        <p>Vacine-se</p>
+                    </li>
+                    <li>
+                        <a href="#">Buscar CPF</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar Atendente</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar UBS</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Conteudo da página -->
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <div class="container w90">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group col-md-6 offset-md-3">
+                                <label for="entradaCPF">Insira o CPF do Dependente: </label>
+                                <div class="form-inline">
+                                    <input type="text" class="form-control buscar sem-borda" placeholder="CPF" id="entradaCPF">
+                                    <button class="btn btn-outline-secondary blue sem-borda" type="button">Buscar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-md-6 offset-md-3">
+                                <p>Amor é fogo que arde sem se ver,
+                                    é ferida que dói, e não se sente;
+                                    é um contentamento descontente,
+                                    é dor que desatina sem doer.
+
+                                    É um não querer mais que bem querer;
+                                    é um andar solitário entre a gente;
+                                    é nunca contentar-se de contente;
+                                    é um cuidar que ganha em se perder.
+
+                                    É querer estar preso por vontade;
+                                    é servir a quem vence, o vencedor;
+                                    é ter com quem nos mata, lealdade.
+
+                                    Mas como causar pode seu favor
+                                    nos corações humanos amizade,
+                                    se tão contrário a si é o mesmo Amor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#entradaCPF').mask('000.000.000-00');
+        })
+    </script>
+</body>
+
+
+
+</html>
