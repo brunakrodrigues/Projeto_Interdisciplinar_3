@@ -1,8 +1,12 @@
 /* =========================================================
     Login
 ========================================================= */
-.login {
-    background: rgb(51, 122, 183);
+
+.login-ubs {
+    background: url('../images/health2.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .login-wrapper {
@@ -29,7 +33,7 @@
     margin-top: 10px;
 }
 
-.login-wrapper .input-group-addon {
+.login-wrapper .input-group-text {
     background: rgb(51, 122, 183);
 }
 
@@ -42,23 +46,8 @@
     width: 50%;
 }
 
-/* =========================================================
-    login UBS
-========================================================= */
-
-.login-ubs {
-    background: url('../images/health2.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.login-ubs .login-wrapper .input-group-addon {
-    background: rgb(43, 129, 43);
-}
-
 .login-ubs .login-wrapper .btn {
-    background: rgb(43, 129, 43);
+    background: rgb(51, 122, 183);
     margin-top: 20px;
     width: 50%;
-}
+} 
