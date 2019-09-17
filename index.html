@@ -208,19 +208,19 @@
                 prevArrow: $('.arrow-prev'),
                 nextArrow: $('.arrow-next')
             });
-        });
 
-        $('.menu a, .conteudos a').on("click", function (event) {
-            var link = $(event.target);
+            $('.menu a, .conteudos a').on("click", function (event) {
+                var link = $(event.target);
 
-            if (!link.attr("href").match('.html')) {
-                event.preventDefault();
-            }
+                if (!link.attr("href").match('.html')) {
+                    event.preventDefault();
+                }
 
-            var section = $(link.attr("href"));
-            $('html, body').animate({
-                scrollTop: section.offset().top - 30
-            },600);
+                var section = $(link.attr("href"));
+                $('html, body').animate({
+                    scrollTop: section.offset().top - 30
+                },600);
+            });
         });
 
     </script>
