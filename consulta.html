@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Vacine-se</title>
+
+    <link rel="shortcut icon" href="images/favicons/favicon-36x36.png">
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/consulta.css">
+
+
+    <script src="https://kit.fontawesome.com/74813c5d7a.js"></script>
+</head>
+<body>
+    <main class="container-fluid">
+        <section class="row health-header">
+            <div class="col">
+                <div class="container w90">
+                    <header class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="index.html">Home</a>
+                        </div>
+                        <nav class="col-md-9 my-auto menu">
+                            <div class="nav justify-content-end">
+                            <p>Bem Vindo(a) Bruna Carolina Rodrigues!</p>
+                            </div>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+        </section>
+
+        <section class="row consulta-usuario">
+            <div class="col">
+                <div class="container w90">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 text-center" style="background: lightgoldenrodyellow">
+                            <div class="dropdown">
+                                <h3>Sua Carteira</h3>
+                                <a class="btn btn-secondary dropdown-toggle consulta-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dependentes
+                                </a>
+
+                                <div class="dropdown-menu dependentes" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Filho 1</a>
+                                    <a class="dropdown-item" href="#">Filho 2</a>
+                                    <a class="dropdown-item" href="#">Filho 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col">
+                <div class="container w90">
+                    <section class="row">
+                        <div class="col-md-2 teste" style="height: 200px;">
+                            <h5>Serviços</h5>
+                            <ul>
+                                <li><a href="">Ouvidoria</a></li>
+                                <li><a href="">Contatos</a></li>
+                                <li><a href="">Assessoria de imprensa</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2" style="height: 200px;">
+                            <h5>Assuntos</h5>
+                            <ul>
+                                <li><a href="vacinacao.html">Vacinação</a></li>
+                                <li><a href="ubs.html">UBS</a></li>
+                                <li><a href="sus.html">SUS</a></li>
+                                <li><a href="remedio.html">Remédios</a></li>
+                                <li><a href="upa.html">UPA</a></li>
+                                <li><a href="agenda-facil.html">Agenda Fácil</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 conteudos" style="height: 200px;">
+                            <h5>Conteúdos</h5>
+                            <ul>
+                                <li><a href="#sobre-nos">Sobre nós</a></li>
+                                <li><a href="#campanha">Campanha</a></li>
+                                <li><a href="#noticias">Notícias</a></li>
+                                <li><a href="#unidades">Unidades</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-4 offset-md-2 text-right">
+                            <h5>Redes Sociais</h5>
+                            <a href="https://www.facebook.com/minsaude" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="https://twitter.com/minsaude" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="https://www.instagram.com/minsaude/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://www.youtube.com/user/MinSaudeBR" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a href="https://soundcloud.com/ministeriodasaude" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/company/ministeriodasaude/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col text-center py-3">
+                            Copyright © Vacine-se ESPM tech. Todos os direitos reservados 2019
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+        $('.menu a, .conteudos a').on("click", function (event) {
+            var link = $(event.target);
+
+            if (!link.attr("href").match('.html')) {
+                event.preventDefault();
+            }
+
+            var section = $(link.attr("href"));
+            $('html, body').animate({
+                scrollTop: section.offset().top - 30
+            },600);
+        });
+        $('.dropdown-toggle').dropdown()
+    });
+    </script>
+</body>
+</html>

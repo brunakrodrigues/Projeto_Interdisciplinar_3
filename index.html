@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Vacine-se</title>
 
     <link rel="shortcut icon" href="images/favicons/favicon-36x36.png">
@@ -33,7 +33,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#campanha">Campanhas</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#unidades">Unidades</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Sou UBS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="ubs-login.html">Sou UBS</a></li>
                             </ul>
                         </nav>
                     </header>
@@ -67,7 +67,7 @@
                             <li><a href="sus.html"><img src="images/sus.png" height="130px"></a></li>
                             <li><a href="remedio.html"><img src="images/remedio.png" height="130px"></a></li>
                             <li><a href="upa.html"><img src="images/upa-icon.png" height="130px"></a></li>
-                            <li><a href="agenda-facil.html"><img src="images/agenda.png" height="130px"></a></li>                    
+                            <li><a href="agenda-facil.html"><img src="images/agenda.png" height="130px"></a></li>
                         </ul>
                         <div class="arrow-container">
                             <a class="arrow-prev"><img src="images/arrow-left.png" height="65px"></a>
@@ -101,9 +101,9 @@
         <div id="noticias" class="container w90 my-4">
             <section class="row">
                 <div class="col-md-5">
-                    <img src="images/tuberculose.jpg"> 
+                    <img src="images/tuberculose.jpg">
                 </div>
-                <div class="col-md-7"> 
+                <div class="col-md-7">
                     <h3 class="blue-text">Brasil sem tuberculose</h3>
                     <br>
                     <p>A tuberculose é uma doença séria que ainda existe no Brasil.
@@ -142,35 +142,32 @@
                 <div class="container w90">
                     <section class="row">
                         <div class="col-md-2 teste" style="height: 200px;">
-                        <h5>Serviços</h5>    
-                        <ul>
-                            <a href=""><li>Ouvidoria</li></a>
-                            <a href=""><li>Contatos</li></a>
-                            <a href=""><li>Assessoria de imprensa</li></a>
-                        </ul>
+                            <h5>Serviços</h5>
+                            <ul>
+                                <li><a href="">Ouvidoria</a></li>
+                                <li><a href="">Contatos</a></li>
+                                <li><a href="">Assessoria de imprensa</a></li>
+                            </ul>
                         </div>
                         <div class="col-md-2" style="height: 200px;">
-                        <h5>Assuntos</h5>
-                        <ul>
-                            <a href="vacinacao.html"><li>Vacinação</li></a>
-                            <a href="ubs.html"><li>UBS</li></a>
-                            <a href="sus.html"><li>SUS</li></a>
-                            <a href="remedio.html"><li>Remédios</li></a>
-                            <a href="upa.html"><li>UPA</li></a>
-                            <a href="agenda-facil.html"><li>Agenda Fácil</li></a>
-                        </ul>
-
-                        
-
+                            <h5>Assuntos</h5>
+                            <ul>
+                                <li><a href="vacinacao.html">Vacinação</a></li>
+                                <li><a href="ubs.html">UBS</a></li>
+                                <li><a href="sus.html">SUS</a></li>
+                                <li><a href="remedio.html">Remédios</a></li>
+                                <li><a href="upa.html">UPA</a></li>
+                                <li><a href="agenda-facil.html">Agenda Fácil</a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-2" style="height: 200px;">
-                        <h5 class="conteudos">Conteúdos</h5>
-                        <ul>
-                            <a href="#sobre-nos"><li>Sobre nós</li></a>
-                            <a href="#campanha"><li>Campanha</li></a>
-                            <a href="#noticias"><li>Notícias</li></a>
-                            <a href="#unidades"><li>unidades</li></a>
-                        </ul>
+                        <div class="col-md-2 conteudos" style="height: 200px;">
+                            <h5>Conteúdos</h5>
+                            <ul>
+                                <li><a href="#sobre-nos">Sobre nós</a></li>
+                                <li><a href="#campanha">Campanha</a></li>
+                                <li><a href="#noticias">Notícias</a></li>
+                                <li><a href="#unidades">Unidades</a></li>
+                            </ul>
                         </div>
                         <div class="col col-md-4 offset-md-2 text-right">
                             <h5>Redes Sociais</h5>
@@ -187,7 +184,7 @@
                             Copyright © Vacine-se ESPM tech. Todos os direitos reservados 2019
                         </div>
                     </section>
-                </div>    
+                </div>
             </div>
         </footer>
     </main>
@@ -195,7 +192,7 @@
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="lib/mask/jquery.mask.min.js"></script>
-    
+
     <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(function () {
@@ -206,20 +203,24 @@
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                slidesPerRow: 3,    
+                slidesPerRow: 3,
                 autoplaySpeed: 3000,
                 prevArrow: $('.arrow-prev'),
                 nextArrow: $('.arrow-next')
             });
-        });
-      
-        $('.menu a').on("click", function (event) {
-            event.preventDefault();
-            var link = $(event.target);
-            var section = $(link.attr("href"));
-            $('html, body').animate({
-                scrollTop: section.offset().top - 30
-            },600);
+
+            $('.menu a, .conteudos a').on("click", function (event) {
+                var link = $(event.target);
+
+                if (!link.attr("href").match('.html')) {
+                    event.preventDefault();
+                }
+
+                var section = $(link.attr("href"));
+                $('html, body').animate({
+                    scrollTop: section.offset().top - 30
+                },600);
+            });
         });
 
     </script>
