@@ -1,21 +1,11 @@
 /* =================================================================
-     Header-consulta
-==================================================================*/
-
-
-/* =================================================================
      Carteira de Vacina
 ==================================================================*/
-.consulta-usuario .w90 {
-    background: salmon;
-    height: 500px;
+.vacinas .vacina {
+    margin-bottom: 20px;
+    width: 20%;
 }
 
-.dropdown .consulta-dropdown {
-    width: 600px;
-    background: rgb(18, 116, 207);
-}
-
-.dropdown-menu .dependentes a {
-    width: 600px;
+.vacinas .card {
+    cursor: pointer;
 }
