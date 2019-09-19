@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/consulta.css">
 
-
+    <script src="jquery.linkunderanim.js"></script>
     <script src="https://kit.fontawesome.com/74813c5d7a.js"></script>
 </head>
 <body>
@@ -30,7 +30,7 @@
                             <a class="logo" href="index.html">Home</a>
                         </div>
                         <nav class="col-md-9 my-auto menu">
-                            <ul class="nav justify-content-end">
+                            <ul id="my-nav" class="nav justify-content-end">
                                 <li class="nav-item"><a class="nav-link" href="#sobre-nos">Sobre nós</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#campanha">Campanhas</a></li>
@@ -674,6 +674,7 @@
 
 
     <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/Animated-Text-Underlines-jQuery-linkUnderline/jquery.linkunderanim.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $('.menu a, .conteudos a').on("click", function (event) {
@@ -731,6 +732,17 @@
                 // função ".show()"
                 var vacinaId = tab.attr('href');
                 $(vacinaId).removeClass('d-none').show();
+            });
+
+            $("#my-nav").linkUnderlineAnim({
+                // animation speed in milliseconds
+                "speed"       : 300,
+                // hex color
+                "color"       :"#1976d2",
+                // thickness
+                "thickness"     : 2,
+                // distance in pixels from top
+                "distance"      : 3
             });
         });
     </script>

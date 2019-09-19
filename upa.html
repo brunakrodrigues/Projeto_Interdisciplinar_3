@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
 
+    <script src="jquery.linkunderanim.js"></script>
     <script src="https://kit.fontawesome.com/74813c5d7a.js"></script>
 </head>
 <body>
@@ -27,7 +28,7 @@
                             <a class="logo" href="index.html">Home</a>
                         </div>
                         <nav class="col-md-9 my-auto menu">
-                            <ul class="nav justify-content-end">
+                            <ul id="my-nav" class="nav justify-content-end">
                                 <li class="nav-item"><a class="nav-link" href="index.html#sobre-nos">Sobre nós</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#noticias">Notícias</a></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html#campanha">Campanhas</a></li>
@@ -186,6 +187,7 @@
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="lib/mask/jquery.mask.min.js"></script>
+    <script src="lib/Animated-Text-Underlines-jQuery-linkUnderline/jquery.linkunderanim.min.js"></script>
 
     <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
@@ -202,7 +204,6 @@
                 prevArrow: $('.arrow-prev'),
                 nextArrow: $('.arrow-next')
             });
-        });
 
         $('.menu a').on("click", function (event) {
             var link = $(event.target);
@@ -215,6 +216,18 @@
             $('html, body').animate({
                 scrollTop: section.offset().top - 30
             },600);
+            });
+
+            $("#my-nav").linkUnderlineAnim({
+                // animation speed in milliseconds
+                "speed"       : 300,
+                // hex color
+                "color"       :"#1976d2",
+                // thickness
+                "thickness"     : 2,
+                // distance in pixels from top
+                "distance"      : 3
+            });
         });
     </script>
     </script>
