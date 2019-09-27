@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vacine-se</title>
+
+    <link rel="shortcut icon" href="images/favicons/favicon-36x36.png">
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/header-ubs.css">
+    <link rel="stylesheet" href="styles/main-ubs.css">
+
+    <script src="lib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/74813c5d7a.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar fix fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <li class="sidebar-brand">
+                        <p>Vacine-se</p>
+                    </li>
+                    <li>
+                        <a href="index-ubs.html">Buscar CPF</a>
+                    </li>
+                    <li>
+                        <a href="ubs-cadastrar-atendente.html">Cadastrar Atendente</a>
+                    </li>
+                    <li>
+                        <a href="ubs-cadastrar-usuario.html">Cadastrar Usuário</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar UBS</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Conteudo da página -->
+            <div id="page-content-wrapper">
+                <header>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button>
+                            </div>
+                            <div class="col-md-auto offset-md-11 fixed-top">
+                                <a href="ubs-login.html"><i class="fas fa-sign-out-alt icon-sign-out"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container w90">
+                    <diva class="row">
+                        <div class="col-12">
+                            <div class="col-md-6 offset-md-3">
+                                <form id="form">
+                                    <div>
+                                        <h3 class="espaco">Cadastro de responsável</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Nome"
+                                            id="nomeResponsavel" name="nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control sem-borda" placeholder="E-mail"
+                                            id="emailResponsavel" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="CPF"
+                                            id="cpfResponsavel" name="cpf">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control sem-borda"
+                                            placeholder="Data de Nascimento" id="dataDeNascimento"
+                                            name="dataDeNascimento">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda"
+                                            placeholder="Número do Cartão do SUS" id="susResponsavel" name="cartaoSUS">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Alergias"
+                                            id="Alergia" name="Alergia">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control sem-borda" id="tipoSanguineo">
+                                            <option selected>Tipo Sanguíneo</option>
+                                            <option value="1">A+</option>
+                                            <option value="2">A-</option>
+                                            <option value="3">B+</option>
+                                            <option value="4">B-</option>
+                                            <option value="5">AB+</option>
+                                            <option value="6">AB-</option>
+                                            <option value="7">O+</option>
+                                            <option value="8">O-</option>
+                                            <option value="9">Não sabe informar</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <span>Deseja adicionar mais um responsável?</span>
+                                        <div class="right">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="opt" id="optSim"
+                                                    onclick="addFormResp()">
+                                                <label class="form-check-label" for="optSim">Sim</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="opt" id="optNao"
+                                                    onclick="closeFormResp()">
+                                                <label class="form-check-label" for="optNao">Não</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
+                    </diva>
+                    <div class="row" id="segundoResponsavel">
+                        <div class="col-12">
+                            <div class="col-md-6 offset-md-3">
+                                <form id="form">
+                                    <div>
+                                        <h3 class="espaco">Cadastro segundo responsável</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Nome"
+                                            id="nomeResponsavel2" name="nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control sem-borda" placeholder="E-mail"
+                                            id="emailResponsavel2" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="CPF"
+                                            id="cpfResponsavel2" name="cpf">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control sem-borda"
+                                            placeholder="Data de Nascimento" id="dataDeNascimento2"
+                                            name="dataDeNascimento">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda"
+                                            placeholder="Número do Cartão do SUS" id="susResponsavel2" name="cartaoSUS">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Alergias"
+                                            id="Alergia2" name="Alergia">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control sem-borda" id="tipoSanguineo2">
+                                            <option selected>Tipo Sanguíneo</option>
+                                            <option value="1">A+</option>
+                                            <option value="2">A-</option>
+                                            <option value="3">B+</option>
+                                            <option value="4">B-</option>
+                                            <option value="5">AB+</option>
+                                            <option value="6">AB-</option>
+                                            <option value="7">O+</option>
+                                            <option value="8">O-</option>
+                                            <option value="9">Não sabe informar</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-md-6 offset-md-3">
+                                <form id="form">
+                                    <div>
+                                        <h3 class="espaco">Cadastro de dependente</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Nome"
+                                            id="nomeDependente" name="nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control sem-borda" placeholder="E-mail"
+                                            id="emailDependente" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="CPF"
+                                            id="cpfDependente" name="cpf">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control sem-borda"
+                                            placeholder="Data de Nascimento" id="dataDeNascimento"
+                                            name="dataDeNascimento">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda"
+                                            placeholder="Número do Cartão do SUS" id="susDependente" name="cartaoSUS">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control sem-borda" placeholder="Alergias"
+                                            id="Alergia" name="Alergia">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control sem-borda" id="tipoSanguineo">
+                                            <option selected>Tipo Sanguíneo</option>
+                                            <option value="1">A+</option>
+                                            <option value="2">A-</option>
+                                            <option value="3">B+</option>
+                                            <option value="4">B-</option>
+                                            <option value="5">AB+</option>
+                                            <option value="6">AB-</option>
+                                            <option value="7">O+</option>
+                                            <option value="8">O-</option>
+                                            <option value="9">Não sabe informar</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary right sem-borda blue">Salvar</button>
+                                </form>
+                                <br>
+                                <br>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script type="text/javascript">
+
+        // Abrir menu
+        $(document).ready(function () {
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+
+        // máscara CPF responsavel 
+        $(document).ready(function () {
+            $('#cpfResponsavel').mask('000.000.000-00');
+        })
+
+        // máscara cartão SUS responsavel 
+        $(document).ready(function () {
+            $('#susResponsavel').mask('000 0000 0000 0000');
+        })
+
+        // máscara CPF segundo responsavel 
+        $(document).ready(function () {
+            $('#cpfResponsavel2').mask('000.000.000-00');
+        })
+
+        // máscara cartão SUS segundo responsavel 
+        $(document).ready(function () {
+            $('#susResponsavel2').mask('000 0000 0000 0000');
+        })
+
+        // máscara CPF dependente 
+        $(document).ready(function () {
+            $('#cpfDependente').mask('000.000.000-00');
+        })
+
+        // máscara cartão SUS dependente 
+        $(document).ready(function () {
+            $('#susDependente').mask('000 0000 0000 0000');
+        })
+
+        // Adicionar mais um formulário para o cadastro de responsável
+        function addFormResp() {
+            var add = document.getElementById("optSim");
+            if (add.checked === true)
+                document.getElementById("segundoResponsavel").style = "display: block;"
+        }
+
+        // Fechar formulario adicional
+        function closeFormResp() {
+            var close = document.getElementById("optNao");
+            if (close.checked === true)
+                document.getElementById("segundoResponsavel").style = "display: none;"
+        }
+
+
+
+    </script>
+</body>
+
+
+
+</html>
