@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>Vacine-se</title>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicons/favicon-36x36.png">
     <link rel="stylesheet" href="lib/bootstrap-4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles-ubs/header.css">
-    <link rel="stylesheet" href="styles-ubs/main.css">
+    <link rel="stylesheet" href="styles/header-ubs.css">
+    <link rel="stylesheet" href="styles/main-ubs.css">
 
     <script src="lib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="lib/jquery/jquery.min.js"></script>
@@ -30,10 +30,13 @@
                         <p>Vacine-se</p>
                     </li>
                     <li>
-                        <a href="#">Buscar CPF</a>
+                        <a href="index-ubs.html">Buscar CPF</a>
                     </li>
                     <li>
-                        <a href="#">Cadastrar Atendente</a>
+                        <a href="ubs-cadastrar-atendente.html">Cadastrar Atendente</a>
+                    </li>
+                    <li>
+                        <a href="ubs-cadastrar-usuario.html">Cadastrar Usuário</a>
                     </li>
                     <li>
                         <a href="#">Cadastrar UBS</a>
@@ -46,19 +49,33 @@
 
             <!-- Conteudo da página -->
             <div id="page-content-wrapper">
-                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </button>
+                <header>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                                    <span class="hamb-top"></span>
+                                    <span class="hamb-middle"></span>
+                                    <span class="hamb-bottom"></span>
+                                </button>
+                            </div>
+                            <div class="col-md-auto offset-md-11 fixed-top">
+                                <a href="ubs-login.html"><i class="fas fa-sign-out-alt icon-sign-out"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
                 <div class="container w90">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group col-md-6 offset-md-3">
                                 <label for="entradaCPF">Insira o CPF do Dependente: </label>
                                 <div class="form-inline">
-                                    <input type="text" class="form-control buscar sem-borda" placeholder="CPF" id="entradaCPF">
-                                    <button class="btn btn-outline-secondary blue sem-borda" type="button">Buscar</button>
+                                    <input type="text" class="form-control buscar sem-borda" placeholder="CPF"
+                                        id="entradaCPF">
+                                    <button class="btn btn-outline-secondary blue sem-borda"
+                                        type="button">Buscar</button>
                                 </div>
                             </div>
 
@@ -67,23 +84,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="col-md-6 offset-md-3">
-                                <p>Amor é fogo que arde sem se ver,
-                                    é ferida que dói, e não se sente;
-                                    é um contentamento descontente,
-                                    é dor que desatina sem doer.
-
-                                    É um não querer mais que bem querer;
-                                    é um andar solitário entre a gente;
-                                    é nunca contentar-se de contente;
-                                    é um cuidar que ganha em se perder.
-
-                                    É querer estar preso por vontade;
-                                    é servir a quem vence, o vencedor;
-                                    é ter com quem nos mata, lealdade.
-
-                                    Mas como causar pode seu favor
-                                    nos corações humanos amizade,
-                                    se tão contrário a si é o mesmo Amor</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni architecto beatae
+                                    pariatur at, aliquid quo possimus cumque odit sint illum similique saepe porro
+                                    asperiores, molestiae quae eos provident illo itaque!</p>
                             </div>
                         </div>
                     </div>
