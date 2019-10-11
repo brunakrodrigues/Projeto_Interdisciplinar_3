@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Index - Cópia %282%29.cshtml" />
+    <Content Remove="Views\Home\Index - Cópia.cshtml" />
+    <Content Remove="Views\Home\UBS - Cópia.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Animated-Text-Underlines-jQuery-linkUnderline\jquery.linkunderanim.js" />
+    <None Include="wwwroot\lib\Animated-Text-Underlines-jQuery-linkUnderline\jquery.linkunderanim.min.js" />
+    <None Include="wwwroot\lib\Animated-Text-Underlines-jQuery-linkUnderline\LICENSE" />
+    <None Include="wwwroot\lib\Animated-Text-Underlines-jQuery-linkUnderline\README.md" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap-4.3.1\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\Dynamically-Load-Content-Into-A-Container-with-jQuery\Dynamically-Load-Content-Into-A-Container-with-jQuery\LICENSE.md" />
+    <None Include="wwwroot\lib\Dynamically-Load-Content-Into-A-Container-with-jQuery\Dynamically-Load-Content-Into-A-Container-with-jQuery\README.md" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\mask\jquery.mask.min.js" />
+    <None Include="wwwroot\lib\slick-1.8.1\.gitignore" />
+    <None Include="wwwroot\lib\slick-1.8.1\CONTRIBUTING.markdown" />
+    <None Include="wwwroot\lib\slick-1.8.1\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\lib\slick-1.8.1\LICENSE" />
+    <None Include="wwwroot\lib\slick-1.8.1\Makefile" />
+    <None Include="wwwroot\lib\slick-1.8.1\README.markdown" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\config.rb" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\fonts\slick.svg" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick-theme.less" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick-theme.scss" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick.js" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick.less" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick.min.js" />
+    <None Include="wwwroot\lib\slick-1.8.1\slick\slick.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\Agenda.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Home\UPA.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Home\UBS.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Home\Vacinacao.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>
